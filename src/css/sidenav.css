@@ -1,20 +1,23 @@
 /* pannel */
-.card,
-Card 
+.sidenav,
+SideNav 
 {
-  transform: translate( 0, -23em);
-  z-index: 2;
+  margin: 2em;
   height: fit-content;
-  width: 100%;
-  padding: 5em 1em 3em 1em;
+  width: fit-content;
+  position: fixed;
+  z-index: 1;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  border-radius: 0.5em;
+  border-radius: 0.6em;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.1);
-  text-align: center;
+  padding: 0em;
 }
 
 /* general link background*/
-.card > .link,
+.sidenav > .link,
 SideNav  > SideNavLink 
 {
   width: 100%;
@@ -24,11 +27,11 @@ SideNav  > SideNavLink
 }
 
 /* basic link text item */
-.card > .link > a,
-Card > SideNavLink 
+.sidenav > .link > a,
+SideNav > SideNavLink 
 {
   margin: 0em 0em;
-  padding: 0.75em 0em;
+  padding: 0.5em 0em;
   z-index: 1;
   top: 0;
   left: 0;
@@ -48,8 +51,8 @@ Card > SideNavLink
 }
 
 /* link text item selected */
-.card > .link.selected > a,
-Card > SideNavLink .link.selected{
+.sidenav > .link.selected > a,
+SideNav > SideNavLink .link.selected{
   border-color: rgba(0, 0, 0, 0.05);
   font-weight: bold;
 }

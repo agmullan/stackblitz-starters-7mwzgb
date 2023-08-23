@@ -1,20 +1,22 @@
-h1, h2, p {
+h1,
+h2,
+p {
   font-family: Philosopher;
   font-weight: normal;
 }
 h1 {
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
 body {
   font-family: Philosopher;
 }
 .subtitle {
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-align: center;
 }
 .row {
   text-align: center;
-    width: 100%;
+  width: 100%;
 }
 .banner {
   width: 100%;
@@ -23,6 +25,22 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(4px); 
+  filter: blur(4px);
   -webkit-filter: blur(4px);
+}
+.content {
+  transform: translate(0, -15em);
+}
+h4 {
+  letter-spacing: 0.3em;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+.highlight {
+  background-color: rgba(0, 0, 255, 0.26);
+}
+
+.section-space{ 
+  height: 3em;
 }
