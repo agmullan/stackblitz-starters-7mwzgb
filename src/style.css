@@ -8,13 +8,12 @@ h1 {
 body {
   font-family: Philosopher;
 }
-p > .subtitle {
+.subtitle {
   letter-spacing: .2em;
   text-align: center;
 }
 .row {
   text-align: center;
-  background-color: black;
-  width: 100%;
+    width: 100%;
 }
 
