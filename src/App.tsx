@@ -3,7 +3,9 @@ import './style.css';
 import Card from './components/card.js';
 import Background from './components/background.js';
 import AboutSection from './components/aboutsection.js';
-import SideNav from './components/sidenav.js'
+import SideNav from './components/sidenav.js';
+import SideNavContent from './components/sidenavcontent.js';
+import sideNavContentStrings from './constants/constants.js'
 
 export default function App() {
   return (
@@ -29,10 +31,15 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className='content'>
+      <div className="content">
         <AboutSection />
-        <div className='section-space'> </div>
-        <SideNav/>
+        <div className="section-space"> </div>
+        <div className="row m-0">
+          <div className='col-4'><SideNav /></div>
+          <div className='col-8'><SideNavContent /></div>
+        </div>
+
+        <div className="section-space"> </div>
       </div>
     </div>
   );
