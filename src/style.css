@@ -1,0 +1,20 @@
+h1, h2, p {
+  font-family: Philosopher;
+  font-weight: normal;
+}
+h1 {
+  letter-spacing: .2em;
+}
+body {
+  font-family: Philosopher;
+}
+p > .subtitle {
+  letter-spacing: .2em;
+  text-align: center;
+}
+.row {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+}
+
